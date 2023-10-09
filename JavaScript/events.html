@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events Example</title>
+    <script>
+        function displayDate(obj){
+             if(obj)
+            {
+                obj.innerHTML= new Date();
+            }
+            else {
+                document.getElementById("date").innerHTML=  Date();
+            }
+        
+        }
+    </script>
+</head>
+<body>
+    <button onMouseover="displayDate(this);">Show Date</button>
+    <p id="date"></p>
+    <div onMouseOver="displayDate(this)">This is Div1 (this) object</div>
+    <div onMouseOver="displayDate(this)">This is Div2 (this) object</div>
+</body>
+</html>

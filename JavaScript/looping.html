@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Looping</title>
+    <script>
+         let nums =[23,45,67,89,229];
+    for(var i=0;i<nums.length;i++)
+    {
+        document.write(" "+nums[i]);
+    }
+    document.write("<br>")
+    for( value in nums)
+    {
+        document.write(" "+nums[value]);
+    }
+    document.write("<br>")
+    for( value of nums)
+    {
+        document.write(" "+value);
+    }
+    document.write("<br>")
+    // nums.forEach((num)=>document.write(" " +num));
+    </script>
+</head>
+<body>
+   
+</body>
+</html>

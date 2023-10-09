@@ -1,0 +1,18 @@
+#container{
+    border:1px solid blue;
+    margin: 30px auto;
+    width:250px;
+}
+#reg{
+    text-align: center;
+    margin:auto;
+}
+.tagborder{
+    margin: 5px;
+    background-color: antiquewhite;
+    padding: 10px;
+    border-radius: 5px;
+}
+#nameErr,#mailErr,#mobileErr,#langErr,#subErr{
+    color:red
+}

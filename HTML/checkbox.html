@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selection Page</title>
+  </head>
+  <body>
+    <h2>Selection Tags</h2>
+    <form
+      action="http://www.kiet.edu/userinput.php"
+      method="post"
+      enctype="multipart/form-data"
+    >
+      <input type="text" name="name" id="id" placeholder="Enter name" /><br />
+      <label>Select your language</label><br />
+      <input type="checkbox" name="java" id="java" />Java<br />
+      <input type="checkbox" name="python" id="python" />Python<br />
+      <input type="checkbox" name="react" id="react" />React JS<br />
+      <label>Select Gender</label><br />
+      <input type="radio" name="gender" id="gender" />Male<br />
+      <input type="radio" name="gender" id="gender" />Female<br />
+      <label>Select your choice</label><br />
+      <select name="choice" id="choice" size="3" multiple>
+        <option value="" selected>Select your choice</option>
+        <option value="java">Java</option>
+        <option value="python">Python</option>
+        <option value="react">React JS</option>
+        <option value="kotlin">Kotlin</option></select
+      ><br /><br />
+      <!-- <input type="submit" value="Send" name="submit" id="submit"/> -->
+      <input type="reset" value="Reset" name="reset" id="reset" />
+      <button type="submit">Submit</button>
+      <!-- <input type="image" src=""/> -->
+    </form>
+  </body>
+</html>

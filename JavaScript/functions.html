@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function Example</title>
+    <script>
+        function sum(num1, num2){
+            return num1+num2;
+        }
+        function mul(num1, num2){
+            return num1*num2;
+        }
+        const div =(num1, num2)=>{
+           return num1/num2;
+        }
+        const sub=()=>{
+           let num1=parseInt(window.prompt("Enter number 1"));
+           let num2=parseInt(window.prompt("Enter number 2"));
+           var check=window.confirm("Do you want subtraction");
+           if(check)
+           window.alert("Subtract is ="+(num1-num2));
+        else {
+            alert("your choice is not substraction")
+        }
+        }
+
+    </script>
+</head>
+<body>
+    <button onclick="window.alert(sum(23,45))">Display Sum</button>
+    <button onclick="window.alert(mul(23,45))">Display Multiply</button>
+    <button onclick="window.alert(div(113,45))">Display Division</button>
+    <button onclick="sub();">Display Subtraction</button>
+</body>
+</html>

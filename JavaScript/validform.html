@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="css/validform.css"/>
+
+</head>
+<body onchange="checkValue()">
+    <div id="container">
+        <p id="reg"><b>Registration</b></p>
+        <form name="regform" action="#" method="get" onsubmit="return checkValue()">
+           <div class="tagborder">
+             <label >Enter your name</label><br/>
+             <input type="text" name="name" size="22%"/><br/>
+             <div id="nameErr"></div>
+           </div>
+           <div class="tagborder">
+            <label >Enter your email</label><br/>
+            <input type="email" name="mail" size="22%"/><br/>
+            <div id="mailErr"></div>
+          </div>
+          <div class="tagborder">
+            <label >Enter your mobile</label><br/>
+            <input type="text" name="mobile" size="22%"/><br/>
+            <div id="mobileErr"></div>
+          </div>
+          <div class="tagborder">
+            <label >Select your computer languages</label><br/>
+            <input type="checkbox" name="lang" value="C Lang">C Lang</input>
+            <input type="checkbox" name="lang" value="Java Lang">Java Lang</input>
+            <input type="checkbox" name="lang" value="JavaScript">JS Lang</input>
+            <div id="langErr"></div>
+          </div>
+          <div class="tagborder">
+            <label >Select your subject</label><br/>
+            <select name="sub">
+              <option value="Select">Select</option>
+              <option value="WT">WT</option>
+              <option value="SE">SE</option>
+              <option value="DS">DS</option>
+            </select>
+            <div id="subErr"></div>
+          </div>
+           <div class="tagborder">
+            <input type="submit" value="Send"/>
+           </div>
+           
+        </form>
+    </div>
+    <script src="js/validform.js"></script>
+</body>
+</html>
